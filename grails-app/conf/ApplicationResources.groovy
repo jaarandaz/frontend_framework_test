@@ -14,6 +14,5 @@ modules = {
     }
     bootstrap { 
 		resource url: 'css/bootstrap.css'
-		resource url: 'css/main.css'
 	}
 }
