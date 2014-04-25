@@ -2,6 +2,7 @@ modules = {
     angular {
     	dependsOn 'bootstrap'
         resource url:'js/angular.min.js'
+        resource url:'js/angular-sanitize.min.js'
     }
     backbone {
     	dependsOn 'bootstrap'
