@@ -10,7 +10,6 @@
 			<div class="jumbotron">
   				<h1>AngularJS</h1>
   				<p>Esta página debe estar hecha con el framework AngularJS.</p>
-				<p>seee</p>
   				<p><a class="btn btn-primary btn-lg" href="${createLink(mapping: 'defaultForm')}">Formulario</a></p>
 			</div>
 		</div>
