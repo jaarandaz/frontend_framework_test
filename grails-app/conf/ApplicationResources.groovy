@@ -1,8 +1,12 @@
 modules = {
     angular {
     	dependsOn 'bootstrap'
-        resource url:'js/angular.min.js'
-        resource url:'js/angular-sanitize.min.js'
+        resource url:'js/angular/app/vendor/angular.min.js'
+        resource url:'js/angular/app/vendor/angular-sanitize.min.js'
+    }
+
+    formController {
+        resource url:'js/angular/app/scripts/controllers/FormController.js'
     }
     backbone {
     	dependsOn 'bootstrap'

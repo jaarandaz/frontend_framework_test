@@ -9,7 +9,7 @@ class MainController {
     }
 
     def angular() {
-    	render view: '/indexAngular'
+    	render view: '/angular/index'
     }
 
     def backbone() {
@@ -22,6 +22,10 @@ class MainController {
 
     def defaultForm(){
     	render view: '/defaultForm'
+    }
+
+    def angularForm() {
+        render template: '/angular/form'
     }
 
     def catchTheName(){
