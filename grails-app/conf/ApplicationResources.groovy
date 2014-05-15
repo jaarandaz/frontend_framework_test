@@ -5,8 +5,8 @@ modules = {
         resource url:'js/angular/app/vendor/angular-sanitize.min.js'
     }
 
-    formController {
-        resource url:'js/angular/app/scripts/controllers/FormController.js'
+    angular_test_app {
+        resource url:'js/angular/app/scripts/test.js'
     }
     backbone {
     	dependsOn 'bootstrap'

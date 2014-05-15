@@ -1,8 +1,12 @@
 package frontend.framework.test
 
+import grails.converters.JSON
+
 class MainController {
 
-	static allowedMethods = [index: "GET", angular:"GET", backbone:"GET", ember:"GET", defaultForm:"GET", catchTheName:"POST"]
+	static allowedMethods = [index: "GET", angular:"GET", backbone:"GET", ember:"GET", defaultForm:"GET",
+            catchTheName:"POST",
+            catchTheNameJSON:"POST",]
 
     def index() {
         render view: '/main/index'
@@ -30,5 +34,9 @@ class MainController {
 
     def catchTheName(){
     	render view: '/showTheName', model: [name: params.name.reverse()]
+    }
+
+    def catchTheNameJSON(){
+        render([name: request.JSON.name.reverse()] as JSON)
     }
 }

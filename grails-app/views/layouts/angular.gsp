@@ -5,7 +5,7 @@
 		<g:layoutHead/>
 		<r:layoutResources />
 	</head>
-	<body>
+	<body ng-app="test">
 		<g:layoutBody/>
 		<r:layoutResources />
 	</body>
